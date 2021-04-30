@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Varela+Round&display=swap');
+
+body{
+    font-family: 'Varela Round', sans-serif;
+    margin: 0; /*cima, direito, baixo, esquerda*/
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(20, 20, 31);
+}
+
+input[type="text"], input[type="password"]
+{
+    color: rgb(234, 234, 236);
+    background-color: rgb(20, 20, 31);
+    width: 63%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 19%;
+    border-radius: 7px;
+    border-color: rgb(20, 20, 31);
+}
+
+input::placeholder
+{
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1
+{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    text-align: center;
+    align-self: center;
+    font-size: 50px;
+}
+
+.p1
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container
+{
+    color: rgb(234, 234, 236);
+    margin-left: 50px;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    background-color: rgb(40, 40, 62);
+    width: 500px;
+    height: 620px;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 6px rgba(0, 0, 0, 0.4);
+}
+
+.email
+{
+    margin-top: 25px;
+    margin-right: 53%;
+}
+
+.password
+{
+    margin-top: 30px;
+    margin-right: 47%;
+}
+
+.confirm
+{
+    margin-top: 30px;
+    margin-right: 35%;
+}
+
+.checkbox
+{
+    text-align: center;
+}
+
+.terms
+{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+button
+{
+    cursor: pointer;
+    background-color: rgb(20, 20, 31);
+    font-family: 'Zen Dots', cursive;
+    width: 180;
+    height: 50px;
+    border-radius: 7px;
+    border-color: rgb(20, 20, 31);
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 4px 1px rgb(33, 33, 51);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.signupbtn
+{
+    color: rgb(234, 234, 236);
+    margin-left: 10px;
+    transition: 0.2s
+}
+
+.signupbtn:hover
+{
+    background-color: rgb(0, 82, 204);
+    border-color: rgb(0, 82, 204);
+}
+
+/*responsivo para mobile*/
+@media screen and(max-width: 768px){
+    .container 
+    {
+        width: 690px;
+        height: 900px;
+        text-align: center;
+        left: 10%;
+        top: 22%
+    }
+
+    h1
+    {
+        margin-top: 45px;
+        margin-bottom: 25px;
+        font-size: 70px;
+    }
+
+    .checkbox
+    {
+        margin-top: 35px;
+        margin-bottom: 25px;
+    } 
+    
+    button
+    {
+        width: 430px;
+        height: 90px;
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    input[type="text"], input[type="password"]
+    {
+        font-size: 20px;
+    }
+    .email
+    {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .password
+    {
+        font-size: 25px;
+    }
+
+    .confirm
+    {
+        font-size: 25px;
+    }   
+
+    .checkbox
+    {
+        font-size: 25px;
+    }
+
+    .terms
+    {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    p
+    {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 21px;
+    }
+}
